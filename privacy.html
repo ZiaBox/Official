@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ZAI BOX LLC (GearTrack)</title>
+    <meta name="description" content="Official Zero-Data and Offline Architecture Privacy Policy for GearTrack and software utilities developed by ZAI BOX LLC.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="shell header-container">
+            <div class="brand-wrapper">
+                <span class="brand-accent-pip"></span>
+                <a href="index.html" class="brand-name">ZAI BOX LLC</a>
+            </div>
+            <nav class="nav-cluster">
+                <a href="index.html">Home</a>
+                <a href="index.html#geartrack">GearTrack</a>
+                <a href="index.html#about">Studio Profile</a>
+                <a href="privacy.html" class="active-page">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="index.html#registry">Entity Registry</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Policy Content -->
+    <main class="policy-wrapper">
+        <div class="shell">
+            <article class="policy-card">
+                <div class="policy-masthead">
+                    <h1>Privacy Policy</h1>
+                    <div class="policy-meta">
+                        Entity: ZAI BOX LLC &bull; Application: GearTrack (Studio Equipment Manager) &bull; Updated: November 2026
+                    </div>
+                </div>
+
+                <div class="policy-notice">
+                    <p>
+                        <strong>Zero-Data Architecture Summary:</strong> Software applications published by <strong>ZAI BOX LLC</strong>, including <strong>GearTrack</strong>, are engineered to run completely offline. We do not collect, store, transmit, process, or sell any personal information, device telemetry, or user-generated asset logs.
+                    </p>
+                </div>
+
+                <div class="policy-article">
+                    <h2>1. Overview and Scope</h2>
+                    <p>
+                        This Privacy Policy sets forth the privacy posture and technical data handling practices of <strong>ZAI BOX LLC</strong> ("the Organization", "we", "us", or "our") concerning the <strong>GearTrack</strong> mobile application and any related standalone offline utility software released by our studio.
+                    </p>
+                    <p>
+                        Our software is authored under an offline-first, client-side execution model. Applications execute without relying upon remote servers, external web APIs, or cloud-hosted database systems.
+                    </p>
+
+                    <h2>2. Information We Do Not Collect</h2>
+                    <p>
+                        ZAI BOX LLC maintains an absolute non-collection policy. Our applications do not solicit, ingest, harvest, or transmit any data categories, including:
+                    </p>
+                    <ul>
+                        <li>Personal contact information (names, telephone numbers, postal addresses, or email addresses).</li>
+                        <li>Hardware and device identifiers (IMEI, Android Advertising ID, MAC addresses, or persistent hardware GUIDs).</li>
+                        <li>Network telemetry, IP addresses, internet service provider details, or connection states.</li>
+                        <li>Geographical positioning coordinates, GPS data, or cell-tower proximity readings.</li>
+                        <li>Behavioral usage statistics, session lengths, feature interaction counters, or automated crash reporting dumps.</li>
+                        <li>Inventory and asset records entered into GearTrack (including equipment names, serial numbers, acquisition prices, salvage valuations, maintenance logs, and packing kit manifests).</li>
+                    </ul>
+
+                    <h2>3. Local Device Processing and Sandbox Storage</h2>
+                    <p>
+                        All computations—including asset valuation calculations, straight-line depreciation modeling, warranty tracking countdowns, and maintenance records within <strong>GearTrack</strong>—are processed deterministically on your local device CPU.
+                    </p>
+                    <p>
+                        Any equipment information you register is stored exclusively within Android's private, internal application sandbox. This data is physically isolated from other applications, is never synchronized to cloud servers, and is completely inaccessible to ZAI BOX LLC. When you uninstall GearTrack or clear application data via Android Settings, all stored information is permanently destroyed.
+                    </p>
+
+                    <h2>4. Zero-Permission Android Architecture</h2>
+                    <p>
+                        Our applications operate strictly within unprivileged Android user space and deliberately omit sensitive permissions. Specifically, GearTrack functions without:
+                    </p>
+                    <ul>
+                        <li><strong>No Internet Permission:</strong> The application does not declare or request <code>android.permission.INTERNET</code>. It is technically incapable of transmitting data outside the host device.</li>
+                        <li><strong>No Camera or Microphone Access:</strong> No visual capture, sensor sampling, or audio recording capabilities.</li>
+                        <li><strong>No Geolocation Access:</strong> No tracking of physical or GPS coordinates.</li>
+                        <li><strong>No Contacts or Telephony Access:</strong> No reading or modification of address books, phone states, or messaging logs.</li>
+                        <li><strong>No Shared External Storage Access:</strong> Operates strictly within internal sandbox boundaries.</li>
+                    </ul>
+
+                    <h2>5. Complete Absence of Third-Party SDKs</h2>
+                    <p>
+                        To ensure total computational isolation and eliminate external data exposure vectors, our software applications contain:
+                    </p>
+                    <ul>
+                        <li>Zero advertising monetization SDKs (e.g., Google AdMob, Unity Ads).</li>
+                        <li>Zero behavioral analytics or performance tracing libraries (e.g., Firebase, Crashlytics, Mixpanel).</li>
+                        <li>Zero federated social login buttons or authentication handlers.</li>
+                        <li>Zero cloud synchronization endpoints or remote databases.</li>
+                    </ul>
+
+                    <h2>6. Children's Privacy (COPPA & GDPR Compliance)</h2>
+                    <p>
+                        Because our applications do not collect personal information of any kind, operate 100% offline, and require no account registration, they pose zero privacy risk to individuals of any age, including children under the age of 13.
+                    </p>
+
+                    <h2>7. Policy Modifications</h2>
+                    <p>
+                        Should any future release necessitate adjustments to our architectural data handling, revisions will be published directly on this website with an updated revision date.
+                    </p>
+
+                    <h2>8. Corporate Contact Information</h2>
+                    <p>
+                        If you have questions, feedback, or require verification regarding this Privacy Policy or GearTrack's offline architecture, please contact our registered office:
+                    </p>
+                    <div class="receipt-box">
+                        <p><strong>Organization Name:</strong> ZAI BOX LLC</p>
+                        <p><strong>Registered Office Address:</strong> 30 N Gould St, Sheridan - 82801-6317, WY, United States (US)</p>
+                        <p><strong>Official Point of Contact:</strong> <a href="mailto:ziaboxllc7254@gmail.com">ziaboxllc7254@gmail.com</a></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <div class="footer-copy">
+                <p>&copy; 2026 ZAI BOX LLC. Registered in Wyoming, United States. All rights reserved.</p>
+            </div>
+            <nav class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="index.html#registry">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

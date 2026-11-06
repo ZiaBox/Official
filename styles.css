@@ -1,0 +1,518 @@
+/* ==========================================================================
+   ZAI BOX LLC — Corporate Design System
+   Aesthetic: Technical Minimalist / Industrial Hardware Architecture
+   Primary Accent: Amber #D97706
+   Background: #FFFFFF / #FAFAF9 (Warm Technical Stone)
+   Text: #1C1917 (Stone-900) & #57534E (Stone-600)
+   Borders: #E7E5E4 (Stone-200)
+   Typography: Space Grotesk (Geometry & Precision) + Inter (Legibility)
+   ========================================================================== */
+
+:root {
+    --bg-base: #FFFFFF;
+    --bg-surface: #FAFAF9;
+    --bg-highlight: #FFFBEB;
+    --border-color: #E7E5E4;
+    --border-amber: rgba(217, 119, 6, 0.35);
+    
+    --text-main: #1C1917;
+    --text-muted: #57534E;
+    --text-subtle: #78716C;
+    
+    --brand-amber: #D97706;
+    --brand-amber-hover: #B45309;
+    --brand-amber-light: #FEF3C7;
+    
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --max-width: 1080px;
+    --radius: 4px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.75rem;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+p {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--brand-amber);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--brand-amber-hover);
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bg-base);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.brand-accent-pip {
+    width: 10px;
+    height: 10px;
+    background-color: var(--brand-amber);
+    border-radius: 2px;
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.01em;
+}
+
+.nav-cluster {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-cluster a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.nav-cluster a:hover,
+.nav-cluster a.active-page {
+    color: var(--text-main);
+}
+
+/* Hero Section */
+.hero-block {
+    padding: 5.5rem 0 4.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-surface);
+}
+
+.hero-content {
+    max-width: 820px;
+}
+
+.kicker-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--brand-amber);
+    margin-bottom: 1.25rem;
+}
+
+.hero-title {
+    font-size: clamp(2.3rem, 4.5vw, 3.4rem);
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-amber);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--brand-amber);
+    transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-amber-hover);
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-main);
+}
+
+/* Section Common */
+.section-pad {
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-head {
+    margin-bottom: 3rem;
+    max-width: 700px;
+}
+
+.section-head h2 {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-head p {
+    font-size: 1.05rem;
+}
+
+/* Featured Application Showcase: GearTrack */
+.showcase-card {
+    background-color: var(--bg-base);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--brand-amber);
+    border-radius: var(--radius);
+    padding: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.showcase-title-wrap h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
+}
+
+.showcase-tagline {
+    font-size: 0.95rem;
+    color: var(--brand-amber);
+    font-weight: 600;
+}
+
+.showcase-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.35rem 0.75rem;
+    background-color: var(--brand-amber-light);
+    color: var(--brand-amber-hover);
+    border-radius: var(--radius);
+}
+
+.showcase-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.showcase-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.spec-box {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+.spec-box h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.spec-box p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* Architecture Framework */
+.tri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+.arch-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2.25rem;
+}
+
+.arch-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.arch-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* About / Philosophy Section */
+.about-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+}
+
+.about-split p {
+    font-size: 1.02rem;
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+}
+
+.about-split p:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact / Verification Section */
+.registry-container {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+}
+
+.registry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.registry-item h4 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-subtle);
+    margin-bottom: 0.5rem;
+}
+
+.registry-item p,
+.registry-item address {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.registry-item a {
+    color: var(--brand-amber);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.registry-item a:hover {
+    color: var(--brand-amber-hover);
+}
+
+/* Policy Documents */
+.policy-wrapper {
+    padding: 5rem 0 7rem;
+}
+
+.policy-card {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.policy-masthead {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.policy-masthead h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.policy-meta {
+    font-size: 0.88rem;
+    color: var(--text-subtle);
+}
+
+.policy-notice {
+    background-color: var(--bg-highlight);
+    border: 1px solid var(--border-amber);
+    border-left: 4px solid var(--brand-amber);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+}
+
+.policy-notice p {
+    font-size: 0.98rem;
+    color: var(--text-main);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.policy-article h2 {
+    font-size: 1.45rem;
+    margin: 2.25rem 0 0.85rem;
+}
+
+.policy-article p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.policy-article ul {
+    margin: 0.75rem 0 1.5rem 1.5rem;
+}
+
+.policy-article li {
+    font-size: 0.98rem;
+    color: var(--text-muted);
+    margin-bottom: 0.55rem;
+    line-height: 1.65;
+}
+
+.receipt-box {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 1.75rem;
+    border-radius: var(--radius);
+    margin-top: 2rem;
+}
+
+.receipt-box p {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.receipt-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--bg-base);
+    border-top: 1px solid var(--border-color);
+    padding: 3.5rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-copy p {
+    font-size: 0.88rem;
+    color: var(--text-subtle);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.footer-links a {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.footer-links a:hover {
+    color: var(--text-main);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .showcase-specs-grid,
+    .tri-grid,
+    .registry-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-split {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .nav-cluster {
+        display: none;
+    }
+}
